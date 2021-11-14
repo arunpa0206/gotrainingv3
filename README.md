@@ -1,3 +1,6 @@
+INSTALLATION INSTRUCTIONS OF GOLANG IN WINDOWS, MAC AND LINUX
+
+
 Installation in windows
 
 step 1. install chocolatey using the following command:
@@ -17,14 +20,12 @@ Step 4 . Install golang using the following command:
         choco install golang
 
 
-step 6. Run the following make target
-        make install-windows
-
-step 7. Test your environment
-        make test
-
-step 8 get the libriraries
-        make get
+        Make a project Folder
+        And run the command to initialise GO
+                go mod init (module_name)
+        
+        Write .go files and run with:
+                        go run (file_name).go
 
 Installation in MAC
 
@@ -39,41 +40,24 @@ step 3. Install git using following command
         brew install git
         git --version
 
-step 4. Run the following make target
-        make install-mac
+step 4. Install go in MAC
+        brew install go
 
-step 5. setup workspace
-        code ~/.bash_profile
+        Make a project Folder
+        And run the command to initialise GO
+                go mod init (module_name)
+        
+        Write .go files and run with:
+                        go run (file_name).go
 
-5.1 Add the following to this file:
-        export GOPATH=$workdirectory/go (replace workdirectory with path )
-        export GOBIN=$GOPATH/bin
-        export PATH=$PATH:$GOPATH:$GOBIN
-        export PATH=$PATH:/usr/local/sbin
-
-5.2 Cretae the recommended directories
-        cd $GOPATH
-        mkdir bin pkg src
-        cd src
-        mkdir github.com
-        cd github.com
-        mkdir $git repo (replace with your git repo name)
-        cd $repo
-        git clone https://github.com/arunpa0206/gotraining.git
-
-step 7. test your environment:
-        make test
-
-step 8 get the libriraries
-        make get
        
 Installation in Linux
 
 Step 1 :- Install GO
-                sudo wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
-                sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz
+                sudo wget https://golang.org/dl/go1.17.3.linux-amd64.tar.gz
+                sudo tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz
                 export PATH=$PATH:/usr/local/go/bin
-                source ~/.bashrc
+                source ~/.bashrc (optional)
                 go version
         
         Make a project Folder
@@ -83,7 +67,4 @@ Step 1 :- Install GO
         Write .go files and run with:
                         go run (file_name).go
 
-Step 2 :- Install protobuf
-                sudo apt update
-                sudo apt install snapd
-                sudo snap install protobuf --classic
+
