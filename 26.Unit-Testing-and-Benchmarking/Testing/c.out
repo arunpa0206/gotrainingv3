@@ -1,0 +1,4 @@
+mode: set
+test/gotrainingv3/26.Unit-Testing-and-Benchmarking/Testing/fib.go:4.21,5.11 1 1
+test/gotrainingv3/26.Unit-Testing-and-Benchmarking/Testing/fib.go:8.2,8.28 1 1
+test/gotrainingv3/26.Unit-Testing-and-Benchmarking/Testing/fib.go:5.11,7.3 1 1
