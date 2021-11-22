@@ -27,6 +27,18 @@ Step 4 . Install golang using the following command:
         Write .go files and run with:
                         go run (file_name).go
 
+Step 5:
+        Install protoc
+        choco install protoc
+
+Step 6:
+        Install mysql
+        choco install mysql
+
+Step 7:
+        Install docker
+        choco install docker-desktop
+
 Installation in MAC
 
 step 1. Install homebrew uisng following command:
@@ -50,7 +62,18 @@ step 4. Install go in MAC
         Write .go files and run with:
                         go run (file_name).go
 
+Step 5:
+        Install protoc
+        brew install protoc-gen-go
+
+Step 6:
+        Install mysql
+        brew install mysql
        
+Step 7:
+        Install docker
+        brew cask install docker
+
 Installation in Linux
 
 Step 1 :- Install GO
@@ -67,4 +90,16 @@ Step 1 :- Install GO
         Write .go files and run with:
                         go run (file_name).go
 
+Step 2:
+        Install protoc
+        sudo apt update
+        sudo apt install snapd
+        sudo snap install protobuf --classic
 
+Step 6:
+        Install mysql
+        sudo apt install mysql-server
+
+Step 7:
+        Install docker
+        sudo snap install docker
