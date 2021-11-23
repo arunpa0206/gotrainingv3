@@ -19,6 +19,9 @@ step 3. install-git using following command:
 Step 4 . Install golang using the following command:
         choco install golang
 
+        Install specific version of golang
+        choco install golang --version=1.16.6 --allow-downgrade -y
+
 
         Make a project Folder
         And run the command to initialise GO
@@ -54,6 +57,9 @@ step 3. Install git using following command
 
 step 4. Install go in MAC
         brew install go
+
+        Install specific version of Golang
+        brew install postgresql@1.16.6
 
         Make a project Folder
         And run the command to initialise GO
