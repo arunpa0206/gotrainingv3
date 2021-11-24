@@ -12,5 +12,5 @@ run:
 		go run main.go
 
 test:
-		go run cli.go
-		go run async_cli.go 
+		go run Client/cli.go
+		

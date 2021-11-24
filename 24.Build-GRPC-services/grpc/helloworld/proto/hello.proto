@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/arunpa0206/gotraining/15.microservices/grpc/helloworld/proto";
+option go_package = "github.com/example/path/gen;gen";
 
 package helloworld;
 
