@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	api "test/gotrainingv3/24.Build-GRPC-services/grpc/streaming/api/generated"
+	api "test/gotrainingv3/24.Build-GRPC-services/streaming/api/generated"
 
 	"google.golang.org/grpc"
 )
