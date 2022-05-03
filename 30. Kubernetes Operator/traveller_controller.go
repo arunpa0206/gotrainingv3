@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 
-	mydomainv1alpha1 "hello-operator2/api/v1alpha1"
+	mydomainv1alpha1 "operators/api/v1alpha1"
 )
 
 // TravellerReconciler reconciles a Traveller object
