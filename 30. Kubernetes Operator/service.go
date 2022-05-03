@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"context"
-	mydomainv1alpha1 "hello-operator2/api/v1alpha1"
+	mydomainv1alpha1 "operators/api/v1alpha1"
 
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
