@@ -25,10 +25,8 @@ gcc
 *Step 2 - Set the path for golang*
 
 	sudo nano ~/.profile
-At the end of the file add this following line -
-	export PATH=$PATH:/usr/local/go/bin
+	At the end of the file add this following line - `export PATH=$PATH:/usr/local/go/bin`
 	source ~/.profile
-Export GOPATH
 	export GOPATH=/usr/local/go
 	
 *Step 3 - Check the go version*
@@ -51,7 +49,7 @@ Export GOPATH
 *Step 6 - Check Docker is Running*
 
 	docker run hello-world
-If you are not able to see "Hello World from Docker" run the following command -	
+	If you are not able to see "Hello World from Docker" run the following command -	
 	reboot
 
 *Step 7 - Installing Minikube*
@@ -82,24 +80,19 @@ If you are not able to see "Hello World from Docker" run the following command -
 	
 *Step 12 - Create Directory at the right path and initialise operator*
 
-Go to /usr/local
 	cd /usr/local
-Change the permission of GO Folder
 	sudo chmod -R 777 go
-Go to go/src
 	cd go/src
-Make a operators directory and go inside it
 	mkdir operators && cd operators
-Run go mod init inside operators folder
 	go mod init
 
 *Step 13 - Initialising Operator SDK*
 
-Start minikube
+	Start minikube
 	minikube start init
-Initialise Operator SDK
+	Initialise Operator SDK
 	operator-sdk init
-Create APIs and Custom Resource
+	Create APIs and Custom Resource
 	operator-sdk create api --version=v1alpha1 --kind=Traveller
 
 *Step 14 - Download the dependencies*
@@ -124,11 +117,11 @@ Create APIs and Custom Resource
 *Step 17 - Spin up the controller*
 
 	make run
-Keep it running in separate tab	
+	Keep it running in separate tab	
 
 *Step 18 - Check the pods status*
 
-Run the following command in separate tab	
+	Run the following command in separate tab	
 	kubectl get all
 	
 *Step 19 - Exposing the service*
