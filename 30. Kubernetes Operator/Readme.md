@@ -22,10 +22,10 @@ gcc
 	curl -OL https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
 	sudo tar -C /usr/local -xvf go1.16.3.linux-amd64.tar.gz
 	
-*Step 2 - Set the path for golang*
+*Step 2 - Set the path for golang* (At the end of the file add the second command)
 
 	sudo nano ~/.profile
-	At the end of the file add this following line - `export PATH=$PATH:/usr/local/go/bin`
+	export PATH=$PATH:/usr/local/go/bin
 	source ~/.profile
 	export GOPATH=/usr/local/go
 	
@@ -46,10 +46,9 @@ gcc
 	sudo usermod -aG docker $USER
 	newgrp docker
 
-*Step 6 - Check Docker is Running*
+*Step 6 - Check Docker is Running* (Reboot is optional if docker run hello-world is not working)
 
 	docker run hello-world
-	If you are not able to see "Hello World from Docker" run the following command -	
 	reboot
 
 *Step 7 - Installing Minikube*
@@ -88,11 +87,8 @@ gcc
 
 *Step 13 - Initialising Operator SDK*
 
-	Start minikube
 	minikube start init
-	Initialise Operator SDK
 	operator-sdk init
-	Create APIs and Custom Resource
 	operator-sdk create api --version=v1alpha1 --kind=Traveller
 
 *Step 14 - Download the dependencies*
@@ -114,21 +110,18 @@ gcc
 
 	kustomize build config/samples | kubectl apply -f -
 
-*Step 17 - Spin up the controller*
+*Step 17 - Spin up the controller* (Keep it running in separate tab)
 
 	make run
-	Keep it running in separate tab	
 
-*Step 18 - Check the pods status*
+*Step 18 - Check the pods status* (Run the following command in separate tab)
 
-	Run the following command in separate tab	
 	kubectl get all
 	
 *Step 19 - Exposing the service*
 
 	minikube service backend-service
 
-*Step 20 - Open localhost:30685*
-	Check on port 30685.
+*Step 20 - Check on port 30685.*
 
 
