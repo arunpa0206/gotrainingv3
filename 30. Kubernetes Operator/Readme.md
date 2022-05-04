@@ -19,8 +19,8 @@ gcc
 ### Installation Instructions
 *Step 1 - Install Golang v1.16.3*
 
-	`curl -OL https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
-	 sudo tar -C /usr/local -xvf go1.16.3.linux-amd64.tar.gz`
+	 curl -OL https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
+	 sudo tar -C /usr/local -xvf go1.16.3.linux-amd64.tar.gz
 	
 	
 *Step 2 - Set the path for golang*
