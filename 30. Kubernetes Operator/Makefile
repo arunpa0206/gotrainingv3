@@ -37,6 +37,7 @@ install-all:
 	make install-kubectl
 	make install-docker
 	make install-minikube
+	minikube start --vm-driver=none
 	make install-operator-sdk
 	make install-kustomize
 	make install-gcc
