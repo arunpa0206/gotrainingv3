@@ -42,17 +42,16 @@ install-all:
 	make install-kustomize
 	make install-gcc
 
-create-directory:
+create-operator-module:
 	cd /usr/local
 	sudo chmod -R 777 go
 	cd go/src
 	mkdir operators && cd operators
 	go mod init
 
-run-minikube:
-	minikube start --vm-driver=none
-
-init-operator-sdk:
+init-operator:
 	minikube start init
 	operator-sdk init
+
+create-operator-api:
 	operator-sdk create api --version=v1alpha1 --kind=Traveller
