@@ -1,6 +1,7 @@
 install-golang:
 	curl -OL https://golang.org/dl/go1.16.3.linux-amd64.tar.gz
 	sudo tar -C /usr/local -xvf go1.16.3.linux-amd64.tar.gz
+	export GOPATH=/usr/local/go
 
 install-kubectl:
 	curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl` 
