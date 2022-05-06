@@ -55,3 +55,5 @@ init-operator:
 
 create-operator-api:
 	operator-sdk create api --version=v1alpha1 --kind=Traveller
+	go mod tidy
+	go mod vendor
