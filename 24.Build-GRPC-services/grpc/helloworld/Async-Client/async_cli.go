@@ -5,7 +5,7 @@ import (
 	// "os"
 
 	// "strconv"
-	pb "github.com/arunpa0206/gotraining/15.microservices/grpc/helloworld/proto"
+	pb "test/gotrainingv3/24.Build-GRPC-services/grpc/helloworld/proto"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
