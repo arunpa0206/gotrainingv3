@@ -1,5 +1,6 @@
 get:
 		go get github.com/gorilla/mux
+		go get -u github.com/gin-gonic/gin
 		go get google.golang.org/protobuf/cmd/protoc-gen-go
 		go get google.golang.org/grpc/cmd/protoc-gen-go-grpc
 		go get -u google.golang.org/grpc
