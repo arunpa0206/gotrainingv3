@@ -37,6 +37,7 @@ Step 5:
 Step 6:
         Install mysql
         choco install mysql
+        ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
 
 Step 7:
         Install docker

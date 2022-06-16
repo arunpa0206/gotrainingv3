@@ -13,6 +13,7 @@ get:
 		go mod init
 		go get github.com/go-redis/redis/v7
 		go get gopkg.in/check.v1
+		go get google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 
 
 install-windows:
