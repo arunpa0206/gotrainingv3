@@ -16,11 +16,15 @@ step 3. install-git using following command:
         choco install git
         Restart the terminal 
 
-Step 4 . Install golang using the following command:
-        choco install golang
+Step 4 . Install golang :
+          
+         Recommended Way : Go to their official website and download and install the latest version - https://go.dev/dl/
+         
+         Other way using Choco :
+                              choco install golang (Might not install the latest version)
 
-        Install specific version of golang
-        choco install golang --version=1.16.6 --allow-downgrade -y
+                              Install specific version of golang
+                              choco install golang --version=1.16.6 --allow-downgrade -y
 
 
         Make a project Folder
