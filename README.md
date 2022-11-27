@@ -80,6 +80,7 @@ Step 5:
 Step 6:
         Install mysql
         brew install mysql
+        brew services start mysql
        
 Step 7:
         Install docker
